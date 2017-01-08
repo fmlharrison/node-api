@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "git repository": "https://github.com/fmlharrison/node-api",
   "author": "Felix Harrison",
   "license": "ISC",
   "dependencies": {
@@ -13,5 +14,8 @@
     "ejs": "^2.5.5",
     "express": "^4.14.0",
     "query-string": "^4.2.3"
+  },
+  "engines": {
+    "node": "7.3.0"
   }
 }
