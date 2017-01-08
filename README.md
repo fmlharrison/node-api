@@ -20,28 +20,23 @@ You API must expose functionality to create, read, update and delete (CRUD) mode
 How your API is to be consumed (a custom interface or something like Google Chrome's "Postman" or Swagger).  
 
 ##Technologies
-I decided to use Node.js and Express for the server side.   
-I also used MongoDB as a database and Mongoose as the ORM.  
-I also used a npm called node-restful.  
+I decided to use Node.js and Express for the server side.    
 
 ##How to use
-First make sure that your computer has node.js and npm installed:
-Download node: [download](https://nodejs.org/en/)  
-
-You also need to be have MongoDB installed on your computer:
-```
-$ brew update  
-$ brew install MongoDB
-```
-
+*Make sure you have node installed on your computer*  
 Clone this repo and start server:
 ```
-$ git clone https://github.com/fmlharrison/restful-api.git
-$ cd restful-api
+$ git clone https://github.com/fmlharrison/node-api
+$ cd node-api
 $ node server.js
 ```
-Go to http://localhost:3000/api/users
+Go to http://localhost:8080
 
 ##Consuming the API
 The API can be consumed using the Google Chrome extension Postman.  
-While inside Postman, use the localhost url and you can send GET, POST, PUT and DELETE requests to the API.
+While inside Postman, use the localhost url and you can send:
+GET http://localhost:8080/api/users  - This will return all of the user data stored in the current session.
+GET http://localhost:8080/api/users/:id  - This will return the data for a user with that id.    
+POST http://localhost:8080/api/users - In the body of the post request put the user *id*, *email*, *forename* and *surname*.   
+PUT http://localhost:8080/api/users/:id - Using a specific user id you can update the user's *id*, *email*, *forename* and/or *surname*.   
+DELETE http://localhost:8080/api/users/:id - Using a specific user id you can delete that user from the data.  
