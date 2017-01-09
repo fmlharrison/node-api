@@ -32,6 +32,9 @@ $ node server.js
 ```
 Go to http://localhost:8080
 
+##Hosting the API
+The static landing page for the API can be found at [https://user-data-api.herokuapp.com/](https://user-data-api.herokuapp.com/).
+
 ##Consuming the API
 The API can be consumed using the Google Chrome extension Postman.  
 While inside Postman, use the localhost url and you can send:
